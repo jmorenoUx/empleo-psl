@@ -1,0 +1,23 @@
+.home .header {
+  background-image: url("../img/main-bg.jpg");
+  background-size: cover;
+  background-position-y: -12rem; }
+  .home .header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009ea5+0,2989d8+42,207cca+61,008cc9+100 */
+    background-image: #009ea5;
+    /* Old browsers */
+    background-image: -moz-linear-gradient(left, #009ea5 0%, #2989d8 42%, #207cca 61%, #008cc9 100%);
+    /* FF3.6-15 */
+    background-image: -webkit-linear-gradient(left, #009ea5 0%, #2989d8 42%, #207cca 61%, #008cc9 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background-image: linear-gradient(to right, #009ea5 0%, #2989d8 42%, #207cca 61%, #008cc9 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009ea5', endColorstr='#008cc9',GradientType=1 );
+    /* IE6-9 */ }

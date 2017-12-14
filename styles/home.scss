@@ -1,0 +1,194 @@
+.home{
+    .header {
+        background-image: url('../img/main-bg.jpg');
+        background-size: cover;
+        background-position-x: 50%;
+        
+        h1 {
+            @include up(font-size, 1.4rem, 0.5, null, null, null, null); 
+        }
+        
+        h2 {            
+            font-weight: 300;
+            @include up(font-size, 1.2rem, 0.4, null, null, null, null);
+        }
+
+        &:before{
+            content:'';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.6;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009ea5+0,2989d8+42,207cca+61,008cc9+100 */
+            background-image: #009ea5; /* Old browsers */
+            background-image: -moz-linear-gradient(left, #009ea5 0%, #2989d8 42%, #207cca 61%, #008cc9 100%); /* FF3.6-15 */
+            background-image: -webkit-linear-gradient(left, #009ea5 0%,#2989d8 42%,#207cca 61%,#008cc9 100%); /* Chrome10-25,Safari5.1-6 */
+            background-image: linear-gradient(to right, #009ea5 0%,#2989d8 42%,#207cca 61%,#008cc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009ea5', endColorstr='#008cc9',GradientType=1 ); /* IE6-9 */
+        }
+
+        .light-slider {
+            
+            li {
+                 &:hover, &:active, &:focus {
+                    color: $light-cyan !important;
+                    fill: $light-cyan !important;
+                }
+            }
+            @include up(margin-top, 4rem, 1, null, null, null, null);
+        }
+    }
+
+    .psl-para-ti {
+        position: relative;
+        .psl-text {
+            h3 {
+                color: $dark-blue;
+                font-weight: 600;
+                @include up(font-size, 1.6rem, null, 1.7rem, 1.9rem, 2.2rem, 2.7rem);
+            }
+
+            p {
+                @include up(font-size, 0.8rem, null, 0.8rem, 1rem, 1rem, 1.4rem);
+            }
+
+            @include up(margin-top, 2rem, null, 3rem, 3rem, 6rem, 9rem);
+            @include up(padding-left, 0rem, 0.5, null, null, null, null);
+
+            @media(min-width:1200px) and (max-width:1280px){
+                margin-top: 5rem !important;
+            }
+
+            @include media-breakpoint-down(sm){
+                text-align: center;
+            }
+
+            @media(min-width:1600px){
+                padding-left: 7rem;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            position: relative;
+            z-index: 1;
+            @include media-breakpoint-down(sm){
+                margin-top: 3rem;
+            }
+        }
+
+        .triangle.gray-triangle {
+            background-color: $gray;
+            -webkit-clip-path:polygon(0 80%, 0% 100%, 200% 100%);
+            clip-path:polygon(0 80%, 0% 100%, 200% 100%);
+
+            @include media-breakpoint-only(md){
+                -webkit-clip-path: polygon(0 90%, 0% 100%, 190% 100%);
+                clip-path: polygon(0 90%, 0% 100%, 190% 100%);
+            }
+
+            @include media-breakpoint-only(lg){
+                -webkit-clip-path: polygon(0 88%, 0% 100%, 230% 100%);
+                clip-path: polygon(0 88%, 0% 100%, 230% 100%);
+            }
+            
+            @media(min-width:1200px) and (max-width:1257px){
+                -webkit-clip-path: polygon(0 86%, 0% 100%, 160% 100%);
+                clip-path: polygon(0 86%, 0% 100%, 160% 100%);
+            }
+
+            @media(min-width:1258px) and (max-width:1558px){
+                -webkit-clip-path: polygon(0 88%, 0% 100%, 230% 100%);
+                clip-path: polygon(0 88%, 0% 100%, 230% 100%);
+            }
+        }
+    }
+
+    .techs {
+        background-color: $gray;
+        .light-slider {
+            height: 4.7rem;
+            img{
+                @include up(width, 1.4rem, 1, null, null, null, null);
+                @include up(height, 1.4rem, 1, null, null, null, null);
+            }
+
+            &+.lSAction {
+                a {
+                    color: #999;
+                }
+            }
+        }
+        @include up(padding-bottom, 1.5rem, 0.5, null, null, null, null);
+    }
+
+    .quieres-una-empresa {
+
+        position: relative;
+        &:before{
+            content:'';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.6;
+            z-index: 1;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#099f9f+0,006699+100 */
+            background: #099f9f; /* Old browsers */
+            background: -moz-linear-gradient(left, #099f9f 0%, #006699 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #099f9f 0%,#006699 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, #099f9f 0%,#006699 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#099f9f', endColorstr='#006699',GradientType=1 ); /* IE6-9 */
+        }
+        .left-img {
+            max-width: 90%;
+        }
+
+        .office {
+            background-image: url('../img/quieres-una-empresa.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-x: 100%;
+        }
+
+        .text {
+            background-color:white;
+            color:$white;
+            
+            @include up(padding-left, 1.5rem, 1.5rem, null, null, null, null);
+
+            img {
+                @include up(width, 3rem, 0.51, null, null, null, null);
+                @include up(height, 3rem, 0.51, null, null, null, null);
+            }
+
+            > div[class*='row'] {
+                position: relative;
+                z-index: 2;
+                @include up(padding-bottom, 2.5rem, 0.5, null, null, null, null);
+            }
+
+            .title {
+                h3 {
+                    position: relative;
+                    z-index: 2;
+                }
+                @include up(padding-top, 2rem, 0.6, null, null, null, null);
+                @include up(padding-bottom, 2.2rem, 0.6, null, null, null, null);
+            }
+        }
+    }
+
+    .retos-constantes {
+       .gray-x {
+           border-top: 1px solid #bcbcbc;
+       }
+
+       .gray-y {
+           border-right: 1px solid #bcbcbc;
+       }
+    }
+}

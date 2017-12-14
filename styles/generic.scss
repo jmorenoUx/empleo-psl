@@ -1,0 +1,124 @@
+$white: #fff;
+$cyan: #0081ef;
+$light-cyan: #45fffa;
+$dark-blue: #0c3363;
+$gray: #e0e0e0;
+
+
+@mixin up($property, $xs, $step, $sm, $md, $lg, $xl) {
+    @if($sm !=null) {
+        #{$property}: $xs;
+        @include media-breakpoint-up(sm) {
+            #{$property}: $sm;
+        }
+        @include media-breakpoint-up(md) {
+            #{$property}: $md;
+        }
+        @include media-breakpoint-up(lg) {
+            #{$property}: $lg;
+        }
+        @include media-breakpoint-up(xl) {
+            #{$property}: $xl;
+        }
+    }
+    @else {
+        #{$property}: $xs;
+        @include media-breakpoint-up(sm) {
+            #{$property}: $xs + 1.5*$step;
+        }
+        @include media-breakpoint-up(md) {
+            #{$property}: $xs + 2*$step;
+        }
+        @include media-breakpoint-up(lg) {
+            #{$property}: $xs + 2.5*$step;
+        }
+        @include media-breakpoint-up(xl) {
+            #{$property}: $xs + 3*$step;
+        }
+    }
+}
+
+.btn-primary {
+    outline: none;
+    background-color: $white;
+    border-color: $white;
+    color: $cyan;
+    font-weight: 600;
+    padding: 0.8rem 2.5rem;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: transparentize($white, 0.4);
+        border-color: transparentize($white, 0.4);
+        color: $cyan;
+    }
+}
+
+.btn {
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.header {
+    position: relative;
+    color: $white;
+    .header-content {
+        padding-top: 3rem;
+        height: 100%;
+        @include up(padding-top, 3rem, 4, null, null, null, null);
+        .btn-primary {
+            margin-top: 3rem;
+            @include up(margin-top, 3rem, null, 3.5rem, 4.2rem, 4.7rem, 4.7rem);
+        }
+        
+        @include up(padding-top, 3rem, null, 8rem, 10rem, 15rem, 15rem);
+    }
+
+    @include up(padding-bottom, 5rem, 1.5, null, null, null, null);
+}
+
+.light-slider {
+    $ls-hw: 3rem !default;
+    $ls-fz: 1.2rem !default;
+
+    li {
+        text-align: center;
+        img {
+            width: $ls-hw;
+            height: $ls-hw;
+            margin-bottom: 0.8rem;
+            @include up(width, 1.1rem, 0.4, null, null, null, null);
+            @include up(height, 1.1rem, 0.4, null, null, null, null);
+        }
+        h3 {
+            font-size: $ls-fz;
+            font-weight: 300;
+            @include up(font-size, 0.8rem, 0.1, null, null, null, null);
+        }
+    }
+
+    &+.lSAction {
+        a {
+            top:75%;
+
+            &.lSPrev {
+                left: 0;
+            }
+
+            &.lSNext {
+                right: 0;
+            }
+        }
+    }
+}
+
+.triangle {
+    -webkit-clip-path: polygon(0 90%, 0% 100%, 100% 100%);
+    clip-path: polygon(0 90%, 0% 100%, 100% 100%);
+    background-color: $white;
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+
+    @include up(height, 20rem, 15rem, null, null, null, null);
+}

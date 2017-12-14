@@ -1,0 +1,16 @@
+{
+  "name": "empleo-npm",
+  "version": "1.0.0",
+  "description": "Project empleo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -r -w styles -o css"
+  },
+  "author": "Juan Fernando Moreno",
+  "license": "ISC",
+  "dependencies": {
+    "lightslider": "^1.1.6",
+    "node-sass": "^4.7.2"
+  }
+}
