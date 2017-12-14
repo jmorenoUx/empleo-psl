@@ -5998,6 +5998,9 @@ a.text-dark:focus, a.text-dark:hover {
   .light-slider + .lSAction a.lSNext {
     right: 0; }
 
+.lSPager {
+  display: none; }
+
 .triangle {
   -webkit-clip-path: polygon(0 90%, 0% 100%, 100% 100%);
   clip-path: polygon(0 90%, 0% 100%, 100% 100%);
@@ -6338,7 +6341,20 @@ a.text-dark:focus, a.text-dark:hover {
       padding-bottom: 2.2rem; }
       .home .quieres-una-empresa .text .title h3 {
         position: relative;
-        z-index: 2; }
+        z-index: 2;
+        font-size: 1.2rem; }
+        @media (min-width: 576px) {
+          .home .quieres-una-empresa .text .title h3 {
+            font-size: 1.65rem; } }
+        @media (min-width: 768px) {
+          .home .quieres-una-empresa .text .title h3 {
+            font-size: 1.8rem; } }
+        @media (min-width: 992px) {
+          .home .quieres-una-empresa .text .title h3 {
+            font-size: 1.95rem; } }
+        @media (min-width: 1200px) {
+          .home .quieres-una-empresa .text .title h3 {
+            font-size: 2.1rem; } }
       @media (min-width: 576px) {
         .home .quieres-una-empresa .text .title {
           padding-top: 2.9rem; } }
@@ -6364,52 +6380,274 @@ a.text-dark:focus, a.text-dark:hover {
         .home .quieres-una-empresa .text .title {
           padding-bottom: 4rem; } }
 
-.home .retos-constantes .title {
+.home .retos-constantes {
   padding-top: 4rem;
   padding-bottom: 4rem; }
   @media (min-width: 576px) {
-    .home .retos-constantes .title {
+    .home .retos-constantes {
       padding-top: 4.75rem; } }
   @media (min-width: 768px) {
-    .home .retos-constantes .title {
+    .home .retos-constantes {
       padding-top: 5rem; } }
   @media (min-width: 992px) {
-    .home .retos-constantes .title {
+    .home .retos-constantes {
       padding-top: 5.25rem; } }
   @media (min-width: 1200px) {
-    .home .retos-constantes .title {
+    .home .retos-constantes {
       padding-top: 5.5rem; } }
   @media (min-width: 576px) {
-    .home .retos-constantes .title {
+    .home .retos-constantes {
       padding-bottom: 4.75rem; } }
   @media (min-width: 768px) {
-    .home .retos-constantes .title {
+    .home .retos-constantes {
       padding-bottom: 5rem; } }
   @media (min-width: 992px) {
-    .home .retos-constantes .title {
+    .home .retos-constantes {
       padding-bottom: 5.25rem; } }
   @media (min-width: 1200px) {
-    .home .retos-constantes .title {
+    .home .retos-constantes {
       padding-bottom: 5.5rem; } }
-  .home .retos-constantes .title h3 {
-    font-size: 1.5rem;
-    color: #0c3363;
-    font-weight: 700; }
+  .home .retos-constantes .title {
+    padding-bottom: 4rem; }
     @media (min-width: 576px) {
-      .home .retos-constantes .title h3 {
+      .home .retos-constantes .title {
+        padding-bottom: 4.75rem; } }
+    @media (min-width: 768px) {
+      .home .retos-constantes .title {
+        padding-bottom: 5rem; } }
+    @media (min-width: 992px) {
+      .home .retos-constantes .title {
+        padding-bottom: 5.25rem; } }
+    @media (min-width: 1200px) {
+      .home .retos-constantes .title {
+        padding-bottom: 5.5rem; } }
+    .home .retos-constantes .title h3 {
+      font-size: 1.2rem;
+      color: #0c3363;
+      font-weight: 700; }
+      @media (min-width: 576px) {
+        .home .retos-constantes .title h3 {
+          font-size: 1.65rem; } }
+      @media (min-width: 768px) {
+        .home .retos-constantes .title h3 {
+          font-size: 1.8rem; } }
+      @media (min-width: 992px) {
+        .home .retos-constantes .title h3 {
+          font-size: 1.95rem; } }
+      @media (min-width: 1200px) {
+        .home .retos-constantes .title h3 {
+          font-size: 2.1rem; } }
+  .home .retos-constantes .gray-x {
+    border-top: 1px solid #bcbcbc; }
+  .home .retos-constantes .gray-y {
+    border-right: 1px solid #bcbcbc; }
+  .home .retos-constantes p {
+    margin-bottom: 2.2rem; }
+    @media (min-width: 576px) {
+      .home .retos-constantes p {
+        margin-bottom: 2.5rem; } }
+    @media (min-width: 768px) {
+      .home .retos-constantes p {
+        margin-bottom: 2.6rem; } }
+    @media (min-width: 992px) {
+      .home .retos-constantes p {
+        margin-bottom: 2.7rem; } }
+    @media (min-width: 1200px) {
+      .home .retos-constantes p {
+        margin-bottom: 2.8rem; } }
+
+.home .testis .title {
+  text-align: center;
+  color: #0081ef;
+  font-weight: 800;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  .home .testis .title h3 {
+    font-size: 1.5rem;
+    position: relative; }
+    @media (min-width: 576px) {
+      .home .testis .title h3 {
         font-size: 1.8rem; } }
     @media (min-width: 768px) {
-      .home .retos-constantes .title h3 {
+      .home .testis .title h3 {
         font-size: 1.9rem; } }
     @media (min-width: 992px) {
-      .home .retos-constantes .title h3 {
+      .home .testis .title h3 {
         font-size: 2rem; } }
     @media (min-width: 1200px) {
-      .home .retos-constantes .title h3 {
+      .home .testis .title h3 {
         font-size: 2.1rem; } }
+  @media (min-width: 992px) {
+    .home .testis .title {
+      text-align: left;
+      padding-bottom: 0;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9f9f9f+0,ffffff+47 */
+      background: #9f9f9f;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #9f9f9f 0%, #ffffff 47%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #9f9f9f 0%, #ffffff 47%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #9f9f9f 0%, #ffffff 47%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f9f9f', endColorstr='#ffffff',GradientType=0 );
+      /* IE6-9 */ }
+      .home .testis .title h3 {
+        top: 45%; } }
+  @media (min-width: 576px) {
+    .home .testis .title {
+      padding-bottom: 0; } }
+  @media (min-width: 768px) {
+    .home .testis .title {
+      padding-bottom: 2rem; } }
+  @media (min-width: 992px) {
+    .home .testis .title {
+      padding-bottom: 3rem; } }
+  @media (min-width: 1200px) {
+    .home .testis .title {
+      padding-bottom: 4rem; } }
+  @media (min-width: 576px) {
+    .home .testis .title {
+      padding-left: 2rem; } }
+  @media (min-width: 768px) {
+    .home .testis .title {
+      padding-left: 2.5rem; } }
+  @media (min-width: 992px) {
+    .home .testis .title {
+      padding-left: 3rem; } }
+  @media (min-width: 1200px) {
+    .home .testis .title {
+      padding-left: 5.5rem; } }
+  @media (min-width: 576px) {
+    .home .testis .title {
+      padding-right: 1.5rem; } }
+  @media (min-width: 768px) {
+    .home .testis .title {
+      padding-right: 2rem; } }
+  @media (min-width: 992px) {
+    .home .testis .title {
+      padding-right: 2.5rem; } }
+  @media (min-width: 1200px) {
+    .home .testis .title {
+      padding-right: 3rem; } }
 
-.home .retos-constantes .gray-x {
-  border-top: 1px solid #bcbcbc; }
+.home .testis #light-slider3 {
+  height: auto; }
+  .home .testis #light-slider3 li {
+    background-size: cover;
+    text-align: left;
+    min-height: 7rem; }
+    @media (min-width: 576px) {
+      .home .testis #light-slider3 li {
+        min-height: 14.5rem; } }
+    @media (min-width: 768px) {
+      .home .testis #light-slider3 li {
+        min-height: 17rem; } }
+    @media (min-width: 992px) {
+      .home .testis #light-slider3 li {
+        min-height: 19.5rem; } }
+    @media (min-width: 1200px) {
+      .home .testis #light-slider3 li {
+        min-height: 22rem; } }
+  .home .testis #light-slider3 .t1, .home .testis #light-slider3 .t2, .home .testis #light-slider3 .t3 {
+    background-image: url("../img/orlando.png"); }
+    .home .testis #light-slider3 .t1 > .col-6, .home .testis #light-slider3 .t2 > .col-6, .home .testis #light-slider3 .t3 > .col-6 {
+      padding-top: 2.5rem;
+      padding-left: 2rem; }
+  .home .testis #light-slider3 p {
+    margin-bottom: 0; }
+  .home .testis #light-slider3 .role {
+    margin-bottom: 2rem;
+    font-size: 1.3rem; }
+    @media (min-width: 576px) {
+      .home .testis #light-slider3 .role {
+        font-size: 1.6rem; } }
+    @media (min-width: 768px) {
+      .home .testis #light-slider3 .role {
+        font-size: 1.7rem; } }
+    @media (min-width: 992px) {
+      .home .testis #light-slider3 .role {
+        font-size: 1.8rem; } }
+    @media (min-width: 1200px) {
+      .home .testis #light-slider3 .role {
+        font-size: 1.9rem; } }
+  .home .testis #light-slider3 .relato {
+    font-size: 0.6rem; }
+    @media (min-width: 576px) {
+      .home .testis #light-slider3 .relato {
+        font-size: 0.75rem; } }
+    @media (min-width: 768px) {
+      .home .testis #light-slider3 .relato {
+        font-size: 0.8rem; } }
+    @media (min-width: 992px) {
+      .home .testis #light-slider3 .relato {
+        font-size: 0.85rem; } }
+    @media (min-width: 1200px) {
+      .home .testis #light-slider3 .relato {
+        font-size: 0.9rem; } }
 
-.home .retos-constantes .gray-y {
-  border-right: 1px solid #bcbcbc; }
+.home .testis h3, .home .testis .role {
+  color: #0081ef;
+  font-weight: 600; }
+
+.home .estas-listo {
+  background-color: #009ea5;
+  padding-top: 4.2rem;
+  padding-bottom: 4.5rem; }
+  .home .estas-listo h3 {
+    color: #fff; }
+  .home .estas-listo .aplicar-btn {
+    margin-top: 2.9rem; }
+    @media (min-width: 576px) {
+      .home .estas-listo .aplicar-btn {
+        margin-top: 3.05rem; } }
+    @media (min-width: 768px) {
+      .home .estas-listo .aplicar-btn {
+        margin-top: 3.1rem; } }
+    @media (min-width: 992px) {
+      .home .estas-listo .aplicar-btn {
+        margin-top: 3.15rem; } }
+    @media (min-width: 1200px) {
+      .home .estas-listo .aplicar-btn {
+        margin-top: 3.2rem; } }
+    .home .estas-listo .aplicar-btn .btn-primary {
+      color: #009ea5;
+      padding: 0.6rem 2.5rem;
+      font-size: 0.9rem; }
+      @media (min-width: 576px) {
+        .home .estas-listo .aplicar-btn .btn-primary {
+          font-size: 1.05rem; } }
+      @media (min-width: 768px) {
+        .home .estas-listo .aplicar-btn .btn-primary {
+          font-size: 1.1rem; } }
+      @media (min-width: 992px) {
+        .home .estas-listo .aplicar-btn .btn-primary {
+          font-size: 1.15rem; } }
+      @media (min-width: 1200px) {
+        .home .estas-listo .aplicar-btn .btn-primary {
+          font-size: 1.2rem; } }
+  @media (min-width: 576px) {
+    .home .estas-listo {
+      padding-top: 4.65rem; } }
+  @media (min-width: 768px) {
+    .home .estas-listo {
+      padding-top: 4.8rem; } }
+  @media (min-width: 992px) {
+    .home .estas-listo {
+      padding-top: 4.95rem; } }
+  @media (min-width: 1200px) {
+    .home .estas-listo {
+      padding-top: 5.1rem; } }
+  @media (min-width: 576px) {
+    .home .estas-listo {
+      padding-bottom: 4.95rem; } }
+  @media (min-width: 768px) {
+    .home .estas-listo {
+      padding-bottom: 5.1rem; } }
+  @media (min-width: 992px) {
+    .home .estas-listo {
+      padding-bottom: 5.25rem; } }
+  @media (min-width: 1200px) {
+    .home .estas-listo {
+      padding-bottom: 5.4rem; } }

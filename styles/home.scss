@@ -175,6 +175,7 @@
                 h3 {
                     position: relative;
                     z-index: 2;
+                    @include up(font-size, 1.2rem, 0.3, null, null, null, null);
                 }
 
                 @include up(padding-top, 2rem, 0.6, null, null, null, null);
@@ -184,17 +185,18 @@
     }
 
     .retos-constantes {
+        @include up(padding-top, 4rem, 0.5, null, null, null, null);
+        @include up(padding-bottom, 4rem, 0.5, null, null, null, null);
 
         .title {
-            @include up(padding-top, 4rem, 0.5, null, null, null, null);
+            
             @include up(padding-bottom, 4rem, 0.5, null, null, null, null);
 
             h3 {
-                @include up(font-size, 1.5rem, 0.2, null, null, null, null);
+                @include up(font-size, 1.2rem, 0.3, null, null, null, null);
                 color: $dark-blue;
                 font-weight: 700;
             }
-            
         }
 
        .gray-x {
@@ -203,6 +205,101 @@
 
        .gray-y {
            border-right: 1px solid #bcbcbc;
-       }
+        }
+
+        p {
+            @include up(margin-bottom, 2.2rem, 0.2, null, null, null, null);
+        }
+    }
+
+    .testis {
+
+        .title {
+            text-align: center;
+            color: $cyan;
+            font-weight: 800;
+            
+            h3 {
+                @include up(font-size, 1.5rem, 0.2, null, null, null, null);
+                position: relative;
+            }
+
+            @include media-breakpoint-up(lg){
+                text-align: left;
+                padding-bottom: 0;
+            
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9f9f9f+0,ffffff+47 */
+                background: #9f9f9f; /* Old browsers */
+                background: -moz-linear-gradient(top, #9f9f9f 0%, #ffffff 47%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, #9f9f9f 0%,#ffffff 47%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, #9f9f9f 0%,#ffffff 47%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f9f9f', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+                h3 {
+                    top: 45%;
+                }
+            }
+
+            @include up(padding-bottom, 1.5rem, null, 0, 2rem, 3rem, 4rem);
+            @include up(padding-left, 1rem, null, 2rem, 2.5rem, 3rem, 5.5rem);
+            @include up(padding-right, 1rem, null, 1.5rem, 2rem, 2.5rem, 3rem);
+        }
+
+        #light-slider3 {
+            height: auto;
+            li{
+                background-size: cover;
+                text-align: left;
+                @include up(min-height, 7rem, 5, null, null, null, null);
+            }
+
+            .t1, .t2, .t3 {
+                background-image: url('../img/orlando.png');
+    
+                > .col-6{
+                    padding-top: 2.5rem;
+                    padding-left: 2rem;
+                }
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .role {
+                margin-bottom: 2rem;
+                @include up(font-size, 1.3rem, 0.2, null, null, null, null);
+            }
+
+            .relato {
+                @include up(font-size, 0.6rem, 0.1, null, null, null, null);
+            }
+        }
+
+        h3, .role {
+            color: $blue3;
+            font-weight: 600;
+        }
+    }
+
+    .estas-listo {
+        background-color: $green-blue;
+
+        h3 {
+            color: $white;
+        }
+
+        .aplicar-btn {
+            @include up(margin-top, 2.9rem, 0.1, null, null, null, null);
+
+            .btn-primary {
+                color: $green-blue;
+                padding: 0.6rem 2.5rem;
+                @include up(font-size, 0.9rem, 0.1, null, null, null, null);
+            }
+        }
+
+        @include up(padding-top, 4.2rem, 0.3, null, null, null, null);
+        @include up(padding-bottom, 4.5rem, 0.3, null, null, null, null);
     }
 }

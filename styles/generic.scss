@@ -3,6 +3,8 @@ $cyan: #0081ef;
 $light-cyan: #45fffa;
 $dark-blue: #0c3363;
 $gray: #e0e0e0;
+$blue3: #0081ef;
+$green-blue: #009ea5;
 
 
 @mixin up($property, $xs, $step, $sm, $md, $lg, $xl) {
@@ -110,6 +112,10 @@ $gray: #e0e0e0;
             }
         }
     }
+}
+
+.lSPager {
+    display: none;
 }
 
 .triangle {
