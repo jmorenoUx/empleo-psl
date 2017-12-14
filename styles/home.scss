@@ -176,6 +176,7 @@
                     position: relative;
                     z-index: 2;
                 }
+
                 @include up(padding-top, 2rem, 0.6, null, null, null, null);
                 @include up(padding-bottom, 2.2rem, 0.6, null, null, null, null);
             }
@@ -183,9 +184,22 @@
     }
 
     .retos-constantes {
+
+        .title {
+            @include up(padding-top, 4rem, 0.5, null, null, null, null);
+            @include up(padding-bottom, 4rem, 0.5, null, null, null, null);
+
+            h3 {
+                @include up(font-size, 1.5rem, 0.2, null, null, null, null);
+                color: $dark-blue;
+                font-weight: 700;
+            }
+            
+        }
+
        .gray-x {
            border-top: 1px solid #bcbcbc;
-       }
+        }
 
        .gray-y {
            border-right: 1px solid #bcbcbc;
