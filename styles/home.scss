@@ -304,6 +304,8 @@
     }
 
     .beneficios-psl {
+
+        padding-bottom: 5rem;
         .title {
             @include up(padding-top, 4rem, 0.3, null, null, null, null);
             @include up(padding-bottom, 4rem, 0.3, null, null, null, null);
@@ -316,12 +318,139 @@
         .squares {
             .gray-br{
                 border: 0.5px solid #898989;
-                @include up(padding, 3.1rem 1.2rem, 0.1, null, null, null, null);
-
+                margin-bottom: 1.5rem;
+                @include up(padding, 3.5rem 0.8rem, 0.1, null, null, null, null);
+                
                 img {
+                    min-width: 6.25rem;
+                    min-height: 5rem;
                     max-width: 7.5rem;
                     max-height: 6.25rem;
+                    @include up(width, 5.3rem, 0.8, null, null, null, null);
+                    @include up(height, 3rem, 0.8, null, null, null, null);                    
+                    @include up(margin-bottom, 2.6rem, 0.2, null, null, null, null);                    
                 }
+
+                p {
+                    @include up(margin-top, 1.5rem, 0.2, null, null, null, null);   
+                }
+
+                h4 {
+                    @include up(font-size, 1.1rem, 0.1, null, null, null, null);
+                }
+            }
+        }
+    }
+
+    .tipos-clientes-proyectos {
+        color: $white;
+
+        div[class*='col-']{
+            min-height: 21rem;
+        }
+
+        .clientes {
+            background-color: $dark-blue2;
+
+            h3 {
+                @include up(font-size, 1.5rem, 0.2, null, null, null, null);
+            }
+        }
+
+        .retos {
+            background-color: $orange;
+        }
+
+        .plataformas {
+            background-image: url('../img/iphone.jpg');
+            background-size: cover;
+            padding-left: 1.2rem;
+            p {
+                position: relative;
+                top: 90%;
+                transform: translateY(-90%);
+                
+            }
+        }
+
+        .innovadoras {
+            background-color: $blue4;
+        }
+
+        .silicon {
+            background-image: url('../img/Silicon-Valley.png');
+            background-size: cover;
+            padding-left: 2.5rem;
+
+            p {
+                position: relative;
+                top: 72%;
+                transform: translateY(-72%);
+                @include up(font-size, 1.1rem, 0.24, null, null, null, null);
+                margin-bottom: 0.5rem;
+            }
+
+            h4 {
+                top: 77%;
+                transform: translateY(-77%);
+                @include up(font-size, 1.4rem, 0.3, null, null, null, null);
+            }
+        }
+
+        .fortune {
+            padding-left: 2.5rem;
+
+            p {
+                color: #2c8ec5;
+                @include up(font-size, 1.1rem, 0.24, null, null, null, null);
+                margin-bottom: 0.5rem;
+            }
+
+            h4 {
+                color: $blue5;
+                font-weight: 700;
+                @include up(font-size, 1.4rem, 0.3, null, null, null, null);
+            }
+        }
+
+        .sistemas-navegacion {
+            color: $blue5;
+            padding-top: 2rem;
+            padding-left: 2rem;
+            background-image: url('../img/tablet.png');
+            background-size: cover;
+            background-position-y: 9rem;
+            background-repeat: no-repeat;
+        }
+
+        .fortune, .sistemas-navegacion {
+            background-color: $gray2;
+            h4 {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .clientes, .retos, .fortune, .innovadoras {
+            position: relative;
+
+            p, h3 {
+
+                @include vertial-align;
+            }
+        }
+
+        h4 {
+            position: relative;
+        }
+
+        p {
+            @include up(font-size, 0.8rem, 0.2, null, null, null, null);
+        }
+
+        br {
+            @include media-breakpoint-down(md) {
+                display: none;
             }
         }
     }

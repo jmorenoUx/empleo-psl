@@ -4,7 +4,13 @@ $light-cyan: #45fffa;
 $dark-blue: #0c3363;
 $gray: #e0e0e0;
 $blue3: #0081ef;
+$blue4: #00a2df;
+$blue5: #114d7f;
 $green-blue: #009ea5;
+$dark-blue2: #073989;
+$orange: #ff6633;
+$gray2: #ededed;
+
 
 
 @mixin up($property, $xs, $step, $sm, $md, $lg, $xl) {
@@ -127,4 +133,10 @@ $green-blue: #009ea5;
     width: 100%;
 
     @include up(height, 20rem, 15rem, null, null, null, null);
+}
+
+@mixin vertial-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
