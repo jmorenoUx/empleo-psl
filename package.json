@@ -10,6 +10,7 @@
   "author": "Juan Fernando Moreno",
   "license": "ISC",
   "dependencies": {
+    "jqcloud2": "^2.0.3",
     "lightslider": "^1.1.6",
     "node-sass": "^4.7.2"
   }
